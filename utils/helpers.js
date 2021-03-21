@@ -1,8 +1,8 @@
 // Helper function to capitalize strings
 function capitalize(string) {
-  const output = string.replace(/\w\S*/g, (w) =>
-    w.replace(/^\w/, (c) => c.toUpperCase())
-  );
+  const output = string
+    .toLowerCase()
+    .replace(/\w\S*/g, (w) => w.replace(/^\w/, (c) => c.toUpperCase()));
 
   return output;
 }
