@@ -9,7 +9,7 @@ let employees = [];
 
 // Write generated page template to file
 function writeToFile(fileName, data) {
-  fs.writeFile(`${__dirname + "/dist/" + fileName}.html`, data, (err) =>
+  fs.writeFile(`${__dirname + "/output/" + fileName}.html`, data, (err) =>
     err
       ? console.log(err)
       : console.log(`Team profile page generated successfully!`)
